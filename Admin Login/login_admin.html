@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="./login_admin_style.css">
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h2 class="active"> Admin Sign In </h2>
+
+
+
+    <div class="fadeIn first">
+      <img src="admin_icon.png" id="icon" alt="Admin Icon" />
+    </div>
+
+    <form onsubmit="callf()">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login ID">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="#">JGEC Admin Login</a>
+    </div>
+
+  </div>
+</div>
+<script>
+  function callf()
+  { var p = document.getElementById("password");
+    if(document.getElementById("login") === "")
+      alert("Please enter username")
+    if( p === "" || p.length <8 )
+      alert("Please enter password(atleast 8 characters)")
+  }
+</script>
+</body>
+</html>
+
