@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dash.css " />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <title>Change Password</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div id="sidebar-head">User Authority</div>
+        <div id="sidebar-user">User Name</div>
+        <ul class="sidebar-items">
+          <li><a href="./dash.html">Dashboard</a></li>
+          <li><a href="./dash_userlog.html">Logged in users</a></li>
+          <li><a href="./dash_activity.html">User Activity</a></li>
+          <li><a href="./dash_cdadmin.html">Create/Delete Admin</a></li>
+          <li><a href="./dash_pass.html">Change Password</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+      <div class="heading">
+        <p id="head">Dashboard</p>
+        <a href=""><button class="logout-btn">Logout</button></a>
+      </div>
+      <div class="chngpass">
+        <div class="chngpass-head">Create Admin</div>
+        <table class="passwordchng">
+            <tr id="passfields">
+                <td>Name: </td>
+                <td><input type="text" id="oldpass" placeholder="Old Password"/></td>
+            </tr>
+            <tr id="passfields">
+                <td>Email: </td>
+                <td><input type="text" id="newpass" placeholder="New Password"/></td>
+            </tr>
+            <tr id="passfields">
+                <td>Password: </td>
+                <td><input type="password" id="confirmpass" placeholder="Password"/> </td>
+            </tr>
+            <tr id="passfields">
+                <td>Confirm Password: </td>
+                <td><input type="password" id="confirmpass" placeholder="Re-enter new password"/> </td>
+            </tr>
+            
+                    
+        </table>
+        <button id="createadminbtn">Submit</button>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
